@@ -17,22 +17,23 @@
 
   <body>
 
+<!--HEADER DIVISION-->
     <div class="header-container">
       <h1 class="header" id="main-header">The Menerator</h1>
       <!--<h1 class="header-alt" id="main-header-alt">The Meme Generator</h1>-->
       <h2 class="sub-header">The Manliest Meme Generator to Ever Meme Generate</h2>
     </div>
 
-
+<!--MEME GENERATOR DIVISION-->
     <div class="meme-generator-container">
       <div class="placeholder-img-and-text" id="canvas">
         <img src="https://cdn10.bigcommerce.com/s-dcvfa4/product_images/uploaded_images/maga-ride-lwrez-3.jpg"
-        alt="Trump on America Motorcycle" class ="trump-pic" id="canvas-img"
+        alt="Trump on America Motorcycle" class ="trump-pic" id="canvas-placeholder-img"
         width="600" height="400" style="opacity: 0.6;">
 
-        <button class="delete-button" id="clear-img" onclick="deleteImg()">x</button>
+        <button class="delete-button" id="clear-placeholder-img" onclick="deleteImg()">x</button>
 
-        <p id="canvas-text">Your Text Here</p>
+        <p id="canvas-placeholder-text">Your Text Here</p>
       </div>
 
 
@@ -48,8 +49,35 @@
             sans-serif" value="Load Image">
           </div>
 
+          <div class="text-overlay" id="text-top-div">
+            <input type="text" id="text-top-input" size="47" style="font-size: 3rem;
+            font-family: Stick No Bills, sans-serif"
+            placeholder="Top Text Here">
+          </div>
 
+          <div class="range-text" id="range-top">
+            <label>
+              Adjust Top Text Size:
+            </label>
 
+              <input type="range" id="text-top-value" size="35" style="font-size: 3rem;
+              font-family: Stick No Bills, sans-serif">
+          </div>
+
+          <div class="text-overlay" id="text-bottom-div">
+            <input type="text" id="text-bottom-input" size="47" style="font-size: 3rem;
+            font-family: Stick No Bills, sans-serif"
+            placeholder="Bottom Text Here">
+          </div>
+
+          <div class="range-text" id="range-bottom">
+            <label>
+              Adjust Bottom Text Size:
+            </label>
+
+            <input type="range" id="text-bottom-value" size="35" style="font-size: 3rem;
+              font-family: Stick No Bills, sans-serif">
+          </div>
 
 
     <script src="meme_generator.js" async defer></script>
