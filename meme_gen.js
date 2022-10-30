@@ -8,6 +8,8 @@ const textBottomSize = document.querySelector('#text-bottom-size');
 */
 const divForMemes = document.querySelector('#insert-memes-here');
 
+
+const count = 1;
 function appendMemeToDom() {
   const newMemeDiv = document.createElement('div');
   newMemeDiv.className = 'display-new-meme';
@@ -27,6 +29,10 @@ function appendMemeToDom() {
   const textToAddToTop = document.createElement('h3');
   textToAddToTop.innerText = textTopInput.value;
 
+  /* THIS ID GENERATOR SHOULD WORK, TEST HER OUT
+  newMemeDiv.id = ('div-' + count);
+  count++;
+  */
 
   newMemeDiv.appendChild(imgForMeme);
   newMemeDiv.appendChild(newExButton);
@@ -40,14 +46,33 @@ function appendMemeToDom() {
   return false;
 }
 
-
-
-/* NEED TO ACCESS THE CORRECT IMAGE
+/*
 function deleteImg() {
-
-  const exThatWasClicked =
-  const specificImgToDelete =
-
-  return false;
+  this.parentElement.remove();
 }
 */
+
+/* THIS WORKS TO DELETE THE FIRST MEME, BUT NOT THE ONE YOU CLICK*/
+function deleteImg() {
+  const deleteButton = document.querySelector('.delete-button');
+  deleteButton.parentElement.remove();
+}
+
+
+/*
+(".delete-button").click(function() {
+  $(this).parent().remove();
+});
+*/
+
+/*POTENTIAL ALTERNATE METHOD THAT LOOKS PROMISING
+var delt = document.getElementsByClassName("delt");
+
+   function delt(event) {
+       if (button.onclick === "Delete") {
+       event.target.parentNode.remove();
+     }
+  }
+
+   ul.addEventListener("click", delt);
+   */
