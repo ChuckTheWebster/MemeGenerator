@@ -27,6 +27,7 @@
 <!--MEME GENERATOR DIVISION-->
     <div class="meme-gen-container">
 
+      <!--REMOVING PLACEHOLDER IMAGE TO SIMPLIFY
       <div class="placeholder-img-and-text" id="canvas">
         <img src="https://cdn10.bigcommerce.com/s-dcvfa4/product_images/uploaded_images/maga-ride-lwrez-3.jpg"
         alt="Trump on America Motorcycle" class ="trump-pic" id="canvas-placeholder-img"
@@ -36,19 +37,24 @@
 
         <p id="canvas-placeholder-text">Your Text Here</p>
       </div>
+      -->
 
 
       <div id="meme-gen-form-parent-div">
         <form id="meme-gen-form">
 
+
           <div>
-            <input type="text" id="img-url-input" size="35" style="font-size:
+            <input type="text" id="img-url-input" size="47" style="font-size:
               3rem; font-family: Stick No Bills, sans-serif"
               placeholder="Bears, Babes, or Beer Image URL Here">
+            <!--REOMOVING LOAD BUTTON TO SIMPLIFY
             <input type="button" id="btn-to-load" onclick="loadMemeToCanvas();"
               size="35" style="font-size: 3rem; font-family: Stick No Bills,
               sans-serif" value="Load Image">
+            -->
           </div>
+
 
           <div class="text-overlay" id="text-top-div">
             <input type="text" id="text-top-input" size="47" style="font-size: 3rem;
@@ -56,6 +62,7 @@
               placeholder="Top Text Here">
           </div>
 
+          <!--REMOVING RANGE TO SIMPLIFY
           <div class="range-text" id="range-top">
             <label>
               Adjust Top Text Size:
@@ -64,6 +71,7 @@
             <input type="range" id="range-top-value" size="35" style="font-size: 3rem;
               font-family: Stick No Bills, sans-serif">
           </div>
+          -->
 
           <div class="text-overlay" id="text-bottom-div">
             <input type="text" id="text-bottom-input" size="47" style="font-size: 3rem;
@@ -71,6 +79,7 @@
               placeholder="Bottom Text Here">
           </div>
 
+          <!--REMOVING RANGE TO SIMPLIFY
           <div class="range-text" id="range-bottom">
             <label>
               Adjust Bottom Text Size:
@@ -79,6 +88,7 @@
             <input type="range" id="range-bottom-value" size="35" style="font-size: 3rem;
               font-family: Stick No Bills, sans-serif">
           </div>
+          -->
 
           <div>
             <input type="button" id="submit" onclick="appendMemeToDom();" size="35" style="font-size: 3rem;
