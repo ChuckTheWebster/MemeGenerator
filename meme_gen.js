@@ -21,11 +21,10 @@ function appendMemeToDom() {
   newExButton.innerText = 'x';
 
   /*debugger*/
-  const textToAddToBottom = document.createElement('h2');
-  /*DO I WANT MY TEXT ELEMENTS TO BE IN Ps*/
+  const textToAddToBottom = document.createElement('h3');
   textToAddToBottom.innerText = textBottomInput.value;
 
-  const textToAddToTop = document.createElement('h2');
+  const textToAddToTop = document.createElement('h3');
   textToAddToTop.innerText = textTopInput.value;
 
 
@@ -40,6 +39,8 @@ function appendMemeToDom() {
   //Does this need to say return false?
   return false;
 }
+
+
 
 /* NEED TO ACCESS THE CORRECT IMAGE
 function deleteImg() {
