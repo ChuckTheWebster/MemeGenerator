@@ -8,6 +8,8 @@ const textBottomSize = document.querySelector('#text-bottom-size');
 */
 const divForMemes = document.querySelector('#insert-memes-here');
 
+
+const count = 1;
 function appendMemeToDom() {
   const newMemeDiv = document.createElement('div');
   newMemeDiv.className = 'display-new-meme';
@@ -20,6 +22,11 @@ function appendMemeToDom() {
   newExButton.setAttribute('onclick', 'deleteImg();')
   newExButton.innerText = 'x';
 
+  /*
+  newMemeDiv.id = ('div-' + count);
+  count++;
+  */
+
   newMemeDiv.appendChild(imgForMeme);
   newMemeDiv.appendChild(newExButton);
 
@@ -28,3 +35,34 @@ function appendMemeToDom() {
   //Does this need to say return false?
   return false;
 }
+
+/*
+function deleteImg() {
+  this.parentElement.remove();
+}
+*/
+
+/* THIS WORKS TO DELETE THE FIRST MEME, BUT NOT THE ONE YOU CLICK*/
+function deleteImg() {
+  const deleteButton = document.querySelector('.delete-button');
+  deleteButton.parentElement.remove();
+}
+
+
+/*
+(".delete-button").click(function() {
+  $(this).parent().remove();
+});
+*/
+
+/*POTENTIAL ALTERNATE METHOD THAT LOOKS PROMISING
+var delt = document.getElementsByClassName("delt");
+
+   function delt(event) {
+       if (button.onclick === "Delete") {
+       event.target.parentNode.remove();
+     }
+  }
+
+   ul.addEventListener("click", delt);
+   */
