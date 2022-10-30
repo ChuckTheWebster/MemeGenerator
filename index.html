@@ -9,7 +9,7 @@
     <meta name="description" content="A Meme Generator for the manliest of men.
     Use this generator to make all your manly meme dreams come true.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="meme_generator.css">
+    <link rel="stylesheet" href="meme_gen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bangers&family=Black+Ops+One&family=Bungee&family=Sigmar+One&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,6 +26,7 @@
 
 <!--MEME GENERATOR DIVISION-->
     <div class="meme-generator-container">
+
       <div class="placeholder-img-and-text" id="canvas">
         <img src="https://cdn10.bigcommerce.com/s-dcvfa4/product_images/uploaded_images/maga-ride-lwrez-3.jpg"
         alt="Trump on America Motorcycle" class ="trump-pic" id="canvas-placeholder-img"
@@ -42,17 +43,17 @@
 
           <div>
             <input type="text" id="img-url-input" size="35" style="font-size:
-            3rem; font-family: Stick No Bills, sans-serif"
-            placeholder="Bears, Babes, or Beer Image URL Here">
+              3rem; font-family: Stick No Bills, sans-serif"
+              placeholder="Bears, Babes, or Beer Image URL Here">
             <input type="button" id="btn-to-load" onclick="loadMemeToCanvas();"
-            size="35" style="font-size: 3rem; font-family: Stick No Bills,
-            sans-serif" value="Load Image">
+              size="35" style="font-size: 3rem; font-family: Stick No Bills,
+              sans-serif" value="Load Image">
           </div>
 
           <div class="text-overlay" id="text-top-div">
             <input type="text" id="text-top-input" size="47" style="font-size: 3rem;
-            font-family: Stick No Bills, sans-serif"
-            placeholder="Top Text Here">
+              font-family: Stick No Bills, sans-serif"
+              placeholder="Top Text Here">
           </div>
 
           <div class="range-text" id="range-top">
@@ -60,14 +61,14 @@
               Adjust Top Text Size:
             </label>
 
-              <input type="range" id="text-top-value" size="35" style="font-size: 3rem;
+            <input type="range" id="range-top-value" size="35" style="font-size: 3rem;
               font-family: Stick No Bills, sans-serif">
           </div>
 
           <div class="text-overlay" id="text-bottom-div">
             <input type="text" id="text-bottom-input" size="47" style="font-size: 3rem;
-            font-family: Stick No Bills, sans-serif"
-            placeholder="Bottom Text Here">
+              font-family: Stick No Bills, sans-serif"
+              placeholder="Bottom Text Here">
           </div>
 
           <div class="range-text" id="range-bottom">
@@ -75,12 +76,31 @@
               Adjust Bottom Text Size:
             </label>
 
-            <input type="range" id="text-bottom-value" size="35" style="font-size: 3rem;
+            <input type="range" id="range-bottom-value" size="35" style="font-size: 3rem;
               font-family: Stick No Bills, sans-serif">
           </div>
 
+          <div>
+            <input type="button" id="submit" onclick="appendMemeToDom();" size="35" style="font-size: 3rem;
+              font-family: Stick No Bills, sans-serif" value="Full Sendy Chicken Tendy">
+            <!--<button id="submit" onclick="appendMemeToDom();" size="35" style="font-size: 3rem;
+              font-family: Stick No Bills, sans-serif">
+              Full Sendy Chicken Tendy</button>-->
+          </div>
 
-    <script src="meme_generator.js" async defer></script>
+        </form> <!--meme form closing-->
+
+      </div> <!--meme form div closing-->
+
+
+<!--THIS IS WHERE THE NEW MEMES WILL POPULATE-->
+      <div class="meme-container" id="insert-memes-here">
+      </div>
+
+
+    </div> <!--meme-generator closing div-->
+
+    <script src="meme_gen.js" async defer></script>
   </body>
 
 </html>
