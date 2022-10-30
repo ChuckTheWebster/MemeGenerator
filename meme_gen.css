@@ -42,3 +42,15 @@ h2 {
     /*padding-left: 1rem;
     padding-right: 1rem;*/
 }
+
+.meme-gen-container input {
+    margin-top: 11px;
+}
+
+.meme-gen-container button {
+    margin-top: 11px;
+}
+
+#btn-to-load {
+    margin-top: 2px;
+}
