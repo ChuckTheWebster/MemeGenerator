@@ -20,14 +20,20 @@ function appendMemeToDom() {
   newExButton.setAttribute('onclick', 'deleteImg();')
   newExButton.innerText = 'x';
 
-  const textToAddToBottom = document.createElement('p');
+  /*debugger*/
+  const textToAddToBottom = document.createElement('h2');
   /*DO I WANT MY TEXT ELEMENTS TO BE IN Ps*/
   textToAddToBottom.innerText = textBottomInput.value;
+
+  const textToAddToTop = document.createElement('h2');
+  textToAddToTop.innerText = textTopInput.value;
 
 
   newMemeDiv.appendChild(imgForMeme);
   newMemeDiv.appendChild(newExButton);
   newMemeDiv.appendChild(textToAddToBottom);
+  newMemeDiv.appendChild(textToAddToTop);
+
 
   document.getElementById('insert-memes-here').appendChild(newMemeDiv);
 
