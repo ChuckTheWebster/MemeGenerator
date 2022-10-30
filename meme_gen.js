@@ -9,7 +9,7 @@ const textBottomSize = document.querySelector('#text-bottom-size');
 const divForMemes = document.querySelector('#insert-memes-here');
 
 
-const count = 1;
+let count = 1;
 function appendMemeToDom() {
   const newMemeDiv = document.createElement('div');
   newMemeDiv.className = 'display-new-meme';
@@ -29,10 +29,11 @@ function appendMemeToDom() {
   const textToAddToTop = document.createElement('h3');
   textToAddToTop.innerText = textTopInput.value;
 
-  /* THIS ID GENERATOR SHOULD WORK, TEST HER OUT
+  /* THIS ID GENERATOR SHOULD WORK, TEST HER OUT*/
+  debugger
   newMemeDiv.id = ('div-' + count);
   count++;
-  */
+
 
   newMemeDiv.appendChild(imgForMeme);
   newMemeDiv.appendChild(newExButton);
