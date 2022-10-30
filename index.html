@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meme Generator</title>
+    <meta name="description" content="A Meme Generator for the manliest of men.
+    Use this generator to make all your manly meme dreams come true.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="meme_generator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bangers&family=Black+Ops+One&family=Bungee&family=Sigmar+One&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="header-container">
+      <h1 class="header" id="main-header">The Menerator</h1>
+      <!--<h1 class="header-alt" id="main-header-alt">The Meme Generator</h1>-->
+      <h2 class="sub-header">The Manliest Meme Generator to Ever Meme Generate</h2>
+    </div>
+
+
+    <div class="meme-generator-container">
+      <div class="placeholder-img-and-text" id="canvas">
+        <img src="https://cdn10.bigcommerce.com/s-dcvfa4/product_images/uploaded_images/maga-ride-lwrez-3.jpg"
+        alt="Trump on America Motorcycle" class ="trump-pic" id="canvas-img"
+        width="600" height="400" style="opacity: 0.6;">
+
+        <button class="delete-button" id="clear-img" onclick="deleteImg()">x</button>
+
+        <p id="canvas-text">Your Text Here</p>
+      </div>
+
+
+      <div id="meme-gen-form-parent-div">
+        <form id="meme-gen-form">
+
+          <div>
+            <input type="text" id="img-url-input" size="35" style="font-size:
+            3rem; font-family: Stick No Bills, sans-serif"
+            placeholder="Bears, Babes, or Beer Image URL Here">
+            <input type="button" id="btn-to-load" onclick="loadMemeToCanvas();"
+            size="35" style="font-size: 3rem; font-family: Stick No Bills,
+            sans-serif" value="Load Image">
+          </div>
+
+
+
+
+
+    <script src="meme_generator.js" async defer></script>
+  </body>
+
+</html>
