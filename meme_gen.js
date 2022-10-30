@@ -20,11 +20,27 @@ function appendMemeToDom() {
   newExButton.setAttribute('onclick', 'deleteImg();')
   newExButton.innerText = 'x';
 
+  const textToAddToBottom = document.createElement('p');
+  /*DO I WANT MY TEXT ELEMENTS TO BE IN Ps*/
+  textToAddToBottom.innerText = textBottomInput.value;
+
+
   newMemeDiv.appendChild(imgForMeme);
   newMemeDiv.appendChild(newExButton);
+  newMemeDiv.appendChild(textToAddToBottom);
 
   document.getElementById('insert-memes-here').appendChild(newMemeDiv);
 
   //Does this need to say return false?
   return false;
 }
+
+/* NEED TO ACCESS THE CORRECT IMAGE
+function deleteImg() {
+
+  const exThatWasClicked =
+  const specificImgToDelete =
+
+  return false;
+}
+*/
