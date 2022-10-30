@@ -15,7 +15,13 @@ function appendMemeToDom() {
   const imgForMeme = document.createElement('img');
   imgForMeme.src = imgUrlInput.value;
 
+  const newExButton = document.createElement('button');
+  newExButton.className = 'delete-button';
+  newExButton.setAttribute('onclick', 'deleteImg();')
+  newExButton.innerText = 'x';
+
   newMemeDiv.appendChild(imgForMeme);
+  newMemeDiv.appendChild(newExButton);
 
   document.getElementById('insert-memes-here').appendChild(newMemeDiv);
 
