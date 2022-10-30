@@ -7,3 +7,18 @@ const textTopSize = document.querySelector('#text-top-size');
 const textBottomSize = document.querySelector('#text-bottom-size');
 */
 const divForMemes = document.querySelector('#insert-memes-here');
+
+function appendMemeToDom() {
+  const newMemeDiv = document.createElement('div');
+  newMemeDiv.className = 'display-new-meme';
+
+  const imgForMeme = document.createElement('img');
+  imgForMeme.src = imgUrlInput.value;
+
+  newMemeDiv.appendChild(imgForMeme);
+
+  document.getElementById('insert-memes-here').appendChild(newMemeDiv);
+
+  //Does this need to say return false?
+  return false;
+}
