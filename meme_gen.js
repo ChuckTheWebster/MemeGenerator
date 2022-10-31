@@ -29,7 +29,6 @@ function appendMemeToDom() {
   textToAddToTop.innerText = textTopInput.value;
 
   /* THIS ID GENERATOR SHOULD WORK, TEST HER OUT*/
-  debugger
   newMemeDiv.id = ('div-' + count);
   count++;
 

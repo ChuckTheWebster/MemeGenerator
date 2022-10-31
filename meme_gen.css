@@ -43,6 +43,10 @@ h2 {
     padding-right: 1rem;*/
 }
 
+h3 {
+    margin: 0;
+    line-height: 30px;
+}
 /*ALL ABOVE ON MAIN BRANCH
 
 
@@ -58,3 +62,8 @@ h2 {
 #btn-to-load {
     margin-top: 2px;
 }
+
+/*
+.meme-container {
+}
+*/
