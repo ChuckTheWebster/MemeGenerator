@@ -73,7 +73,7 @@ BUT IT MESSES WITH A LOT OF THINGS SO PROCEED WITH CAUTION
     text-align: center;
     color: white;
     margin-top: 10px;
-    border: 5px solid white;
+    /*border: 5px solid white;*/
     margin-left: 10px;
     margin right: 10px;
 }
