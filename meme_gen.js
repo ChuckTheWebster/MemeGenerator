@@ -18,11 +18,6 @@ for (let btn of deleteButtons) {
 }
 */
 
-
-
-
-
-
 //Function adds a new meme inside a div to the existing meme-container div:
 let count = 1;
 function appendMemeToDom() {
@@ -36,6 +31,7 @@ function appendMemeToDom() {
   newExButton.className = 'delete-button';
   /*newExButton.setAttribute('onclick', 'deleteImg();')*/
   newExButton.innerText = 'x';
+  //On clicking the ex button, event listener removes the parent Element (the meme)
   newExButton.addEventListener('click', function(e) {
     e.target.parentElement.remove();
   });
