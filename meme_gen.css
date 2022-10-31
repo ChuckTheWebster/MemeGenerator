@@ -1,6 +1,4 @@
 
-/*SET HTML FONT SIZE IF NECESSARY*/
-
 html {
     font-size: 10px;
 }
@@ -43,11 +41,14 @@ h2 {
     padding-right: 1rem;*/
 }
 
+h3 {
+    font-size: 3rem;
+}
 
-/*ALL ABOVE ON MAIN BRANCH
+h4 {
+    font-size: 3rem;
+}
 
-
-/*merged to css-input-margins branch*/
 .meme-gen-container input {
     margin-top: 11px;
 }
@@ -60,31 +61,39 @@ h2 {
     margin-top: 2px;
 }
 
+/*THIS MAKES THE BORDERS SHRINK TO THE SIZE OF THE PIC
+BUT IT MESSES WITH A LOT OF THINGS SO PROCEED WITH CAUTION
+.meme-container {
+    display: flex;
+}
+*/
+
 .display-new-meme {
     position: relative;
     text-align: center;
     color: white;
     margin-top: 10px;
+    border: 5px solid white;
+    margin-left: 10px;
+    margin right: 10px;
 }
 
 .bottom {
     position: absolute;
-    /*text-align: center;*/
-    /*width: 88%;*/
     left: 50%;
     bottom: -12%;
     transform: translate(-50%, -50%);
-    /*box-sizing: border-box;*/
     color: white;
+    font-size: 3rem;
 }
 
 .top {
     position: absolute;
-    top: 0%;
+    top: -5%;
     left: 50%;
-    /*THIS IS WHAT IS MAKING THEM CENTER:*/
     transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 3rem;
 }
 
 .delete-button {
