@@ -87,4 +87,9 @@ h2 {
     text-align: center;
 }
 
+.delete-button {
+    position: absolute;
+    top: -3%;
+    transform: translate(-50%, -50%);
+}
 
