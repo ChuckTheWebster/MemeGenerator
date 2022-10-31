@@ -8,7 +8,6 @@ const textBottomSize = document.querySelector('#text-bottom-size');
 */
 const divForMemes = document.querySelector('#insert-memes-here');
 
-
 let count = 1;
 function appendMemeToDom() {
   const newMemeDiv = document.createElement('div');
