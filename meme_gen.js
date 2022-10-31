@@ -43,6 +43,12 @@ function appendMemeToDom() {
 
   document.getElementById('insert-memes-here').appendChild(newMemeDiv);
 
+  //INPUT FORM CLEARING FUNCTIONALITY HERE:
+
+  imgUrlInput.value = '';
+  textTopInput.value = '';
+  textBottomInput.value = '';
+
   //Does this need to say return false?
   return false;
 }
