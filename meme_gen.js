@@ -8,6 +8,7 @@ const textBottomSize = document.querySelector('#text-bottom-size');
 */
 const divForMemes = document.querySelector('#insert-memes-here');
 
+//Function adds a new meme inside a div to the existing meme-container div:
 let count = 1;
 function appendMemeToDom() {
   const newMemeDiv = document.createElement('div');
@@ -21,7 +22,6 @@ function appendMemeToDom() {
   newExButton.setAttribute('onclick', 'deleteImg();')
   newExButton.innerText = 'x';
 
-  /*debugger*/
   const textToAddToBottom = document.createElement('h3');
   textToAddToBottom.innerText = textBottomInput.value;
   textToAddToBottom.className = 'bottom';
@@ -30,21 +30,20 @@ function appendMemeToDom() {
   textToAddToTop.innerText = textTopInput.value;
   textToAddToTop.className = 'top';
 
-  /* THIS ID GENERATOR SHOULD WORK, TEST HER OUT*/
+  //Generates a numbered id for the new meme's div:
   newMemeDiv.id = ('div-' + count);
   count++;
 
-
+  //Adds meme img, delete button, and text to a new meme div:
   newMemeDiv.appendChild(imgForMeme);
   newMemeDiv.appendChild(newExButton);
   newMemeDiv.appendChild(textToAddToBottom);
   newMemeDiv.appendChild(textToAddToTop);
 
-
+  //adds new meme div to meme-container:
   document.getElementById('insert-memes-here').appendChild(newMemeDiv);
 
-  //INPUT FORM CLEARING FUNCTIONALITY HERE:
-
+  //Clears the meme form:
   imgUrlInput.value = '';
   textTopInput.value = '';
   textBottomInput.value = '';
