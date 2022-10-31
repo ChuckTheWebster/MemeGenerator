@@ -24,9 +24,11 @@ function appendMemeToDom() {
   /*debugger*/
   const textToAddToBottom = document.createElement('h3');
   textToAddToBottom.innerText = textBottomInput.value;
+  textToAddToBottom.className = 'bottom';
 
-  const textToAddToTop = document.createElement('h3');
+  const textToAddToTop = document.createElement('h4');
   textToAddToTop.innerText = textTopInput.value;
+  textToAddToTop.className = 'top';
 
   /* THIS ID GENERATOR SHOULD WORK, TEST HER OUT*/
   newMemeDiv.id = ('div-' + count);
