@@ -43,10 +43,7 @@ h2 {
     padding-right: 1rem;*/
 }
 
-h3 {
-    margin: 0;
-    line-height: 30px;
-}
+
 /*ALL ABOVE ON MAIN BRANCH
 
 
@@ -63,7 +60,31 @@ h3 {
     margin-top: 2px;
 }
 
-/*
-.meme-container {
+.display-new-meme {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
 }
-*/
+
+.bottom {
+    position: absolute;
+    /*text-align: center;*/
+    /*width: 88%;*/
+    left: 50%;
+    bottom: -12%;
+    transform: translate(-50%, -50%);
+    /*box-sizing: border-box;*/
+    color: white;
+}
+
+.top {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    /*THIS IS WHAT IS MAKING THEM CENTER:*/
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
