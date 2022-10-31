@@ -8,6 +8,21 @@ const textBottomSize = document.querySelector('#text-bottom-size');
 */
 const divForMemes = document.querySelector('#insert-memes-here');
 
+/*
+const deleteButtons = document.querySelectorAll('.delete-button');
+
+for (let btn of deleteButtons) {
+  btn.addEventListener('click', function(e) {
+    e.target.parentElement.remove();
+  });
+}
+*/
+
+
+
+
+
+
 //Function adds a new meme inside a div to the existing meme-container div:
 let count = 1;
 function appendMemeToDom() {
@@ -19,8 +34,11 @@ function appendMemeToDom() {
 
   const newExButton = document.createElement('button');
   newExButton.className = 'delete-button';
-  newExButton.setAttribute('onclick', 'deleteImg();')
+  /*newExButton.setAttribute('onclick', 'deleteImg();')*/
   newExButton.innerText = 'x';
+  newExButton.addEventListener('click', function(e) {
+    e.target.parentElement.remove();
+  });
 
   const textToAddToBottom = document.createElement('h3');
   textToAddToBottom.innerText = textBottomInput.value;
@@ -52,18 +70,17 @@ function appendMemeToDom() {
   return false;
 }
 
+
+
+
+/* THIS WORKS TO DELETE THE FIRST MEME, BUT NOT THE ONE YOU CLICK*************/
 /*
 function deleteImg() {
-  this.parentElement.remove();
-}
-*/
-
-/* THIS WORKS TO DELETE THE FIRST MEME, BUT NOT THE ONE YOU CLICK*/
-function deleteImg() {
-  const deleteButton = document.querySelector('.delete-button');
+  debugger
+  const deleteButton = document.querySelectorAll('.delete-button');
   deleteButton.parentElement.remove();
 }
-
+*/
 
 /*
 (".delete-button").click(function() {
@@ -82,3 +99,9 @@ var delt = document.getElementsByClassName("delt");
 
    ul.addEventListener("click", delt);
    */
+
+   /*
+function deleteImg() {
+  this.parentElement.remove();
+}
+*/
